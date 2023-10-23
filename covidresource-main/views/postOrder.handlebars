@@ -1,0 +1,25 @@
+<div class="navbar">
+  <a  href="/posts"><i class="fa fa-bandcamp" aria-hidden="true"></i> All posts</a>
+  <a  href="/bookings"><i class="fa fa-check-square-o" aria-hidden="true"></i> Bookings</a>
+  <a href="/api"><i class="fa fa-area-chart" aria-hidden="true"></i> Track Covid Cases</a>
+  {{#if hospital}}
+  <a class="active" href="/post-order"><i class="fa fa-plus-square" aria-hidden="true"></i> Post Order</a>
+  <a href="/orders"><i class="fa fa-book" aria-hidden="true"></i> Received Orders</a>
+  {{/if}}
+  <a href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+</div>
+<div class="div1">
+<div class="formdiv" >
+  <h2>Post Your Resources Here</h2>
+  <h3>Here you can post the resources that are affordable by you</h3>
+  <form id="formin" action="post-order" method="post">
+    <label for="resources">Resources</label>
+    <input type="text" name="resources" id="resources" required> <br>
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description" required> <br>
+    <label for="quantity">Quantity</label>
+    <input type="text" name="quantity" id="quantity" required> <br>
+    <button class="btn3" type="submit">Submit</button>
+</form>
+
+</div>

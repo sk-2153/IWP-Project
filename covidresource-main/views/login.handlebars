@@ -1,0 +1,35 @@
+
+<div class="top">
+    <img src="ss.png" alt="icon" width="100px" height="100px" id="imgdiv">
+    <h1 id="h1top">Covid Defender</h1>
+</div>
+<div class="box">
+    <div class="form">
+        <form action="/login" method = "post">
+        <h2>Login Here!
+        </h2>
+        <div class="inputBox">
+            <input type="email" name="email"  required>
+            <span>Email</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="password"  pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,}$"  required>
+            <span>Password</span>
+            <i></i>
+        </div>
+        <br><br>
+        <h3>Choose Your Account Type</h3>
+        <div class="radio-toolbar">
+            <input type="radio" id="user" name="usertype" value="user" checked>
+            <label for="user">User</label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="radio" id="hospital" name="usertype" value="hospital">
+            <label for="hospital">Hospital</label>
+        </div>
+        <div class="links">
+            <a href="/signup">Don't have an account? Signup</a>
+        </div>
+            <button class="btn" type="submit">Login</button>
+        </form>
+     </div>
+</div>

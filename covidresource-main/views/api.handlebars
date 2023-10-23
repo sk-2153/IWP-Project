@@ -1,0 +1,56 @@
+<div class="navbar">
+  <a  href="/posts"><i class="fa fa-bandcamp" aria-hidden="true"></i> All posts</a>
+  <a  href="/bookings"><i class="fa fa-check-square-o" aria-hidden="true"></i> Bookings</a>
+  <a class="active" href="/api"><i class="fa fa-area-chart" aria-hidden="true"></i> Track Covid Cases</a>
+  {{#if hospital}}
+  <a href="/post-order"><i class="fa fa-plus-square" aria-hidden="true"></i> Post Order</a>
+  <a href="/orders"><i class="fa fa-book" aria-hidden="true"></i> Received Orders</a>
+  {{/if}}
+  <a href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+</div>
+<br/>
+<br/>
+
+
+
+<div class = "div1">
+    <h2>Daily Tracking - India </h2>
+<table style="width:900px">
+    <thead>
+    <tr>
+        <th><h3>Data</h3></th>
+        <th><h3>Values</h3></th>
+    </tr>
+    </thead>
+<tbody>
+<tr>
+    <td>Active Cases</td>
+    <td>{{data.activeCases}}</td>
+</tr>
+<tr>
+    <td>Active New cases</td>
+    <td>{{data.activeCasesNew}}</td>
+</tr>
+<tr>
+    <td>Recovered Cases</td>
+    <td>{{data.recovered}}</td>
+</tr>
+<tr>
+    <td>Recovered New Cases</td>
+    <td>{{data.recoveredNew}}</td>
+</tr>
+<tr>
+    <td>Deaths</td>
+    <td>{{data.deaths}}</td>
+</tr>
+<tr>
+    <td>New Deaths</td>
+    <td>{{data.deathsNew}}</td>
+</tr>
+<tr>
+    <td>Total Cases</td>
+    <td>{{data.totalCases}}</td>
+</tr>
+</tbody>
+</table>
+</div>
